@@ -10,16 +10,10 @@ export class TabsPage {
 
 
   constructor(
+    
     protected usuarioService: UsuarioService
   ) 
-  {
-    this.usuarioService.getAll().subscribe(
-      res =>{
-        this.quantUsuario = res.length
-      }
-    );
-    }
-    
+ 
   }
 
 
