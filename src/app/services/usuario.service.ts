@@ -8,6 +8,9 @@ import { Usuario } from '../modulo/usuario'
 })
 export class UsuarioService {
 
+  getAll(): any {
+    throw new Error("Method not implemented.");
+  }
 constructor(
 
   protected fire: AngularFireDatabase,
