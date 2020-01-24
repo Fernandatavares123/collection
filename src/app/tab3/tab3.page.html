@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Troca
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-item lines="none">
+        <img src="assets/usuario.png"  *ngIf="!preview">
+        <img [src]="preview"  *ngIf="preview">
+      </ion-item>
+    <ion-card>
+        
+        
+        </ion-card-header>
+      
+        <ion-card-content>  
+     
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>
