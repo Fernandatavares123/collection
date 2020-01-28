@@ -6,6 +6,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class MensagemService {
 
+  [x: string]: any;
   constructor(
     protected alertController: AlertController
   ) { }
@@ -20,5 +21,17 @@ export class MensagemService {
 
     await alert.present();
   }
+  async presentLoading() {
+    const loading= await this.loadingController.create({
+     //message: 'Hellooo',
+     //duration: 2000,
+     spinner:"dots"
+   });
+   await loading.present();
+ }
+
+ async dismissLoading(){
+   await this.loadingController.dismiss();
+ }
 
 }

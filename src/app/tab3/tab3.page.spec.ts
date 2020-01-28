@@ -11,12 +11,18 @@ describe('Tab3Page', () => {
     TestBed.configureTestingModule({
       declarations: [Tab3Page],
       imports: [IonicModule.forRoot()]
-    }).compileComponents();
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(Tab3Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
+  beforeEach(() => {
+    fixture = TestBed.createComponent(Tab3Page);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
