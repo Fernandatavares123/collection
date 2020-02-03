@@ -8,14 +8,18 @@ import { Usuario } from '../model/usuario';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
+  protected usuarios: any;
   protected usuario: Usuario = new Usuario;
   protected id: string = null;
 
 constructor(
-protected usuarioService: UsuarioService)
-{}
+protected usuarioService: UsuarioService,
 
-ngOnInit() {}
+){
+}
+
+
+
+
 
 }
